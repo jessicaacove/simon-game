@@ -1,0 +1,101 @@
+body {
+
+}
+
+.sequence-entered {
+  background-image: url("../images/correct.gif");
+}
+
+.game-ended {
+  background-image: url("../images/gameover.gif");
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 80px;
+  margin: 15px;
+}
+
+section {
+  margin: 0 auto;
+  position: relative;
+  width: 620px;
+}
+
+section.blocked {
+  pointer-events: none;
+}
+
+
+button {
+  border: 10px solid #000;
+  cursor: pointer;
+  height: 300px;
+  margin: 0 -2px;
+  outline: none;
+  padding: 0;
+  width: 300px;
+}
+
+#counter {
+  background: #000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 100px;
+  line-height: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -108px;
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  top: 50%;
+  width: 200px;
+}
+
+#green {
+  border-top-left-radius: 100%;
+  background: rgba(59, 176, 100, 0.5);
+}
+
+#red {
+  border-top-right-radius: 100%;
+  background: rgba(193, 72, 68, 0.5);
+}
+
+#yellow {
+  border-bottom-left-radius: 100%;
+  background: rgba(195, 171, 75, 0.5);
+}
+
+#blue {
+  border-bottom-right-radius: 100%;
+  background: rgba(48, 48, 145, 0.5);
+}
+
+
+
+#red:hover,
+#red.lighton {
+  background: rgba(193, 72, 68, 1);
+}
+
+#green:hover,
+#green.lighton {
+  background: rgba(59, 176, 100, 1);
+}
+
+/*button id="gren" class="lighton"*/
+
+#yellow:hover,
+#yellow.lighton {
+  background: rgba(195, 171, 75, 1);
+}
+
+#blue:hover,
+#blue.lighton {
+  background: rgba(48, 48, 145, 1);
+}
